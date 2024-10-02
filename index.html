@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Portfolio Website - Dark & Light Mode</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" 
+        href="">
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <img src="logo.jpg" class="logo">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">HIRE ME</a></li>
+                </ul>
+                <img src="moon.png" id="icon">
+            </nav>
+            <div class="info">
+                <h1>I'm <span>Narayanaswamy</span> Eluri</h1>
+                <p>This is my official portfolio website to showcase my all
+                    works related to web <br>development and Full Stack java.</p>
+                <a href="">Download CV</a>
+            </div>
+            <div class="img-box">
+                <img src="highlight.png" class="back-img">
+                <img src="myimage.png" class="main-img">
+            </div>
+            <div class="social-links">
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-behance"></i></a>
+                <a href=""><i class="fab fa-dribbble"></i></a>
+
+            </div>
+        </div>
+        <script>
+
+        var icon=document.getElementById("icon");
+        
+        icon.onclick=function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+               icon.src="sun.png";
+            }else{
+                icon.src="moon.png";
+            }
+        }
+
+        </script>
+    </body>
+</html>
